@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&family=Shizuru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&family=Shizuru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Redressed&family=Shizuru&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .main  h4{
+            text-align: center;
+            font-size: 90px;
+            color: rgb(51, 54, 58) ;
+  
+
+        }
+.box{
+    border:1px solid rgb(82, 82, 82);
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    padding:100px ;
+    border-radius: 8px;
+ 
+    background: linear-gradient(45deg,rgb(30, 127, 192,.7),rgb(189, 19, 223,.7), rgb(255, 123, 0) );
+}
+.main{
+    background-image: url(dollar-bg2.jpg);
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:absolute;
+}
+        img{
+            height:150px;
+            width: 150px;
+            margin: 0 auto;
+        }
+        .box h3{
+            font-size:25px;
+            text-align: center;
+            font-family: 'Shizuru', cursive;
+        }
+ .btn{
+    padding:7px 10px;
+    font-size: 24px;
+    border: none;
+    outline:none;
+    height: 60px;
+    width:200px;
+    margin: 0 auto;
+    border-radius: 8px;
+    border-radius: 8px;
+    color:white;
+    font-weight:500;
+    background: linear-gradient(45deg,rgb(30, 127, 192),rgb(189, 19, 223), rgb(255, 123, 0) );
+transition: .4s;
+font-family: 'Akaya Telivigala', cursive;
+}
+.btn:hover{
+    padding:10px 13px;
+    height: 67px;
+    width:240px;
+}
+.pop{
+  background-image: url(Dollar-4K.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+    top: 0px;
+    left: 0px;
+        height:100%;
+        width:100%;
+        position: absolute;
+        z-index: 10;
+        transform: translateY(-110%);
+        transition: .5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+.show{
+    transform: translateY(0%); 
+
+}
+.pop h4{
+    text-align: center; 
+    color: rgb(0, 140, 221);
+    font-size:80px ;
+    font-family: 'Redressed', cursive;
+}
+.pop h4 span{
+    color: rgb(247, 0, 0);
+    font-size: 130px;
+font-weight: 1300;
+}
+.pop h3{
+    text-align: center;
+    font-size:40px;
+    font-family: 'Redressed', cursive;
+}
+.pop h3 span{
+    color: rgb(255, 94, 0);
+    font-size:60px;
+}
+.pop h5{
+    text-align: center;
+    font-size:35px;
+    color: rgb(4, 127, 241);
+    font-family: 'Redressed', cursive;
+}
+.pop h5 span{
+    color: rgb(0, 10, 148);
+}
+    </style>
+</head>
+<body>
+    <div class="pop">
+        <img src="dollar-symbol.png" alt="">
+       <h4><Span>C</Span>ongratulations</h4>
+       <h3>You <span>H</span>ave earned <span>1000$</span> in one click 💖</h3>
+  <h5>Click Next to open account on <span> SwitchBank</span></h5>
+  <button class="btn" onclick="popup()">Next>>></button>
+
+    </div>
+  <div class="main">
+    <h4>EARN 1000$(Dollar) in one click</h4>
+    <div class="box">
+        <img src="dollar-symbol.png" alt="">
+        <h3>Click Here To Earn Money</h3>
+        <button class="btn" onclick="popup()">Earn Dollar</button>
+    </div>
+  </div>
+    <script>
+      function popup(){
+        const pop = document.querySelector('.pop');
+    //   const back = document.querySelector('.back');
+      pop.classList.add('show');
+    //   back.classList.remove('show');
+      }
+    </script>
+</body>
+</html>
